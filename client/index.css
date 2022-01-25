@@ -1,0 +1,8 @@
+.card {
+    background-color: rgba(102, 116, 146, 0.295);
+    padding: .5rem .75rem .5rem .75rem;
+}
+
+.card-title {
+    margin: .5rem 0;
+}
