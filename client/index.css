@@ -1,8 +1,22 @@
 .card {
     background-color: rgba(102, 116, 146, 0.295);
     padding: .5rem .75rem .5rem .75rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
 }
 
 .card-title {
     margin: .5rem 0;
+}
+.card-content {
+    margin: .5rem 0;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
