@@ -1,0 +1,17 @@
+{
+  "name": "transport-investments",
+  "version": "1.0.0",
+  "description": "population tracker",
+  "main": "index.js",
+  "dependencies": {
+    "ajax": "^0.0.4",
+    "node": "^17.4.0",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
