@@ -1,22 +1,38 @@
 .card {
     background-color: rgba(102, 116, 146, 0.295);
     padding: .5rem .75rem .5rem .75rem;
+    margin: 1rem 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 600px;
 }
 
 .card-year {
     margin: .5rem 0;
+    font-size: 2.5rem;
+    font-weight: bolder;
 }
 .card-population {
     margin: .5rem 0;
+    font-size: 3rem;
+    font-weight: bolder;
 }
 
 .center-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.page-title {
+    text-align: center;
+    margin: 0 .5rem .5rem .5rem;
 }

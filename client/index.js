@@ -1,33 +1,20 @@
-
 console.log('Hello World')
 
-$.get('https://datausa.io/api/data?drilldowns=Nation&measures=Population')
-    .then((data) => {
-        // console.log(data)
+$(function (){
 
-        const yearPaste = $('.card-year')
-        const popPaste = $('.card-population')
-        
-        const yearData = data.year
-        
-        yearPaste.append(yearData)
-        console.log(yearData)
+    const $cards = $('#cards-container')
 
-        for(let i; i > data.length; i++){
-            console.log(data[i])
-            // data[i].push(information)
+    $.ajax({
+        type: 'GET',
+        url: 'https://datausa.io/api/data?drilldowns=Nation&measures=Population',
+        success: function(data) {
+            console.log(data)
+            $.each(data.data, function(i, stuff) {
+                $cards.append('<div class="card"><p class="card-year"> '+ stuff.Year +'</p><p class="card-population">'+ stuff.Population +'<p></div>')
+                // console.log(stuff.Year)
+            })
         }
-
-        // let allStuff = data
-
-        // let year = data.
-        // console.log(information)
-    }).catch((e) => {
-        console.log(e)
     })
 
-// const getData = () => {
+})
 
-//     let endpoint = "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
-//     let apiKey = ""
-// }
