@@ -13,6 +13,9 @@
 </head>
 <body>
     <div class="container">
+
+        <!-- NAVBAR -->
+
         <nav class="navbar">
             <div class="container-fluid">
                 <ul>
@@ -22,6 +25,11 @@
             </div>
             <hr>
         </nav>
+
+        <!-- END NAVBAR -->
+
+        <!-- HEADER -->
+
         <h1 class="page-title">2015 State Populations</h1>
         <div class="cards-container" id="cards-container-states">
             <div class="legend">
@@ -30,6 +38,32 @@
                 <p></p>
             </div>
             <hr>
+
+        <!-- END HEADER -->
+
+        <!-- All states and populations will render here -->
+
+        <!-- MODAL POPUP -->
+
+            <div class="modal fade" id="stateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="stateModalTitle"></h4>
+                        </div>
+                        <div class="modal-body">
+                            <h4>State ID</h4>
+                                <p id="info1"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick=clearPopup()>Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- END OF MODAL -->
+
         </div>
     </div>
 </body>
